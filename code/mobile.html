@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="content/style/style.css" />
+		<link rel="stylesheet" href="content/style/bootstrap-grid.css" /> <!--Will be useful later-->
+		<script src="content/js/jquery.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+<body>
+    <div class="container" id="mobileJoin">
+	<div style="height: 40%; width: 100%; padding-top: 3rem;">
+		<img src="images/myscrabblelogo.svg" style="width: 100%;"></img>
+	</div>
+	<div>
+		<label>Enter Room code below:</label>
+		<input id="gameCodeInput" type="text" style="width: 100%; margin: .3rem 0 1rem 0;">
+		<label>Enter Name below:</label>
+		<input id="nameInput" type="text" maxlength="12" style="width: 100%; margin: .3rem 0 1rem 0;">
+		<label>Choose your colour:</label>
+		<input id="colourInput" type="color" style="width: 100%; margin-top: .3rem;">
+		<div style="text-align: center;">
+			<button class="btn" id="joinBtn" style="display: inline-block; margin-top: 1rem;">Join</button>
+		</div>
+	</div>
+    </div>
+
+    <div class="container" id="mobileWaiting" style="text-align: center;">
+		<div style="font-size: 1.7rem; padding-top: 1rem;">Waiting for players to join</div>
+		<div id="localPlayerNameW">
+			<div class="piece" style="background: #ec2335;">
+				<div class="letter">M</div>
+				<div class="points">3</div>
+			</div>
+			<div class="playerName">Mikey</div>
+		</div>
+		<div style="margin-top: 1rem;">
+			<p>Everybody's joined?</p>
+			<button id="readyBtn" class="btn" style="display: inline-block;">Start game</button>
+		</div>
+    </div>
+
+	<div class="container" id="mobilePlay" style="text-align: center;">
+		<div id="board"></div>
+		<div id="controls">
+			<button class="btn" id="endTurnBtn">End Turn</button>
+		</div>
+		<div id="rack">
+			<!--<label>X Dimension:</label>
+			<input id="xPiece" type="text" style="width: 20%; margin: .3rem 0 1rem 0;">
+			<label>Y Dimension:</label>
+			<input id="yPiece" type="text" style="width: 20%; margin: .3rem 0 1rem 0;">
+			<input id="pieceLetter" type="text" style="width: 20%; margin: .3rem 0 1rem 0;">
+			<button id="playPiece" class="btn" style="display: inline-block">Submit</button>-->
+		</div>
+	</div>
+
+	<script src="content/js/shared.js"></script>
+	<script src="content/js/mobile.js"></script>
+</body>
+</html>

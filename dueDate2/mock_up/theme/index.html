@@ -1,0 +1,154 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="bootstrap-grid.css" /> <!--Will be useful later-->
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="container" id="demo">
+			<button class="btn">Button</button>
+			<input type="text">
+			<div class="play">Play</div>
+			<div class="piece">
+				<div class="letter">P</div>
+				<div class="points">4</div>
+			</div>
+			<div class="piece">
+				<div class="letter">I</div>
+				<div class="points">2</div>
+			</div>
+			<div class="piece">
+				<div class="letter">E</div>
+				<div class="points">1</div>
+			</div>
+			<div class="piece">
+				<div class="letter">C</div>
+				<div class="points">3</div>
+			</div>
+			<div class="piece">
+				<div class="letter">E</div>
+				<div class="points">1</div>
+			</div>
+			<div class="piece">
+				<div class="letter">S</div>
+				<div class="points">3</div>
+			</div>
+		</div>
+		
+		<div class="container" id="desktopMain">
+			<div style="height: 50%; width: 100%;">
+				<img class="logo" src="img/logo.png"></img>
+			</div>
+			<div style="height: 50%; width: 100%;">
+				<div id="mainOptions">
+					<div class="play">Play</div>
+					<div class="settings">Settings</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container" id="desktopLobby">
+			<div class="row" style="height: 75%; width: 100%">
+				<div class="col-6" id="instructions">
+					<h1>Join Lobby!</h1>
+					<p>On your phone, laptop or tablet, go to the link:</p>
+					<h4>myscrabble.io</h3>
+					<p>And enter the code below:</p>
+				</div>
+				<div class="col-6" id="participants">
+					<p>Players joined:</p>
+					<div class="row justify-content-center">
+						<div class="col-4" id="player1L">
+							<div class="piece" style="background-color: #ff2f4c;">
+								<div class="letter">M</div>
+								<div class="points">3</div>
+							</div>
+							<div class="playerName">Mikey</div>
+						</div>
+					</div>
+					<div class="row justify-content-around">
+						<div class="col-4" id="player2L">
+							<div class="piece" style="background-color: #fff92f;">
+								<div class="letter">D</div>
+								<div class="points">3</div>
+							</div>
+							<div class="playerName">Daniel</div>
+						</div>
+						<div class="col-4" id="player4L">
+							<div class="piece empty">
+								<div class="letter">E</div>
+								<div class="points">3</div>
+							</div>
+							<div class="playerName">Player4</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-4" id="player3L">
+							<div class="piece" style="background-color: #476fff;">
+								<div class="letter">O</div>
+								<div class="points">1</div>
+							</div>
+							<div class="playerName">Oishin</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6" style="text-align: center;">
+					<span style="font-size: 3rem; text-shadow: 3px 3px 7px black;">Room Code:</span>
+					<div id="roomCode">
+						<div class="piece">
+							<div class="letter">V</div>
+							<div class="points">4</div>
+						</div>
+						<div class="piece">
+							<div class="letter">K</div>
+							<div class="points">5</div>
+						</div>
+						<div class="piece">
+							<div class="letter">X</div>
+							<div class="points">8</div>
+						</div>
+						<div class="piece">
+							<div class="letter">G</div>
+							<div class="points">2</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container" id="mobileJoin">
+			<div style="height: 40%; width: 100%; padding-top: 3rem;">
+				<img src="img/logo.png" style="width: 100%;"></img>
+			</div>
+			<div>
+				<label>Enter Room code below:</label>
+				<input type="text" style="width: 100%; margin: .3rem 0 1rem 0;">
+				<label>Enter Name below:</label>
+				<input type="text" style="width: 100%; margin-top: .3rem;">
+				<div style="text-align: center;">
+					<button class="btn" style="display: inline-block; margin-top: 1rem;">Join</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container" id="mobileWaiting" style="text-align: center;">
+			<div style="font-size: 1.7rem; padding-top: 2rem;">Waiting for players to join</div>
+			<div id="localPlayerNameW">
+				<div class="piece" style="background: #ec2335;">
+					<div class="letter">M</div>
+					<div class="points">3</div>
+				</div>
+				<div class="playerName">Mikey</div>
+			</div>
+			<div style="margin-top: 5rem;">
+				<p>Everybody's joined?</p>
+				<button class="btn" style="display: inline-block">Start game</button>
+			</div>
+		</div>
+	</body>
+</html>

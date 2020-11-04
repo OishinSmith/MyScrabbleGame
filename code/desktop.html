@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="content/style/style.css" />
+		<link rel="stylesheet" href="content/style/bootstrap-grid.css" />
+		<script src="content/js/jquery.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<div class="container" id="desktopMain">
+			<div style="height: 50%; width: 100%;">
+				<img class="logo" src="images/myscrabblelogo.svg"></img>
+			</div>
+			<div style="height: 50%; width: 100%;">
+				<div id="mainOptions">
+					<div class="play" id="playBtn">Play</div>
+					<div class="settings">Settings</div>
+				</div>
+			</div>
+		</div>
+
+	    <div class="container" id="desktopLobby">
+			<div class="row" style="height: 75%; width: 100%">
+				<div class="col-6" id="instructions">
+					<h1>Join Lobby!</h1>
+					<p>On your phone, laptop or tablet, go to the link:</p>
+					<h4>myscrabble.io</h3>
+					<p>And enter the code below:</p>
+				</div>
+				<div class="col-6" id="participants">
+					<p>Players joined:</p>
+					<div class="row justify-content-center">
+						<div class="col-4" id="player1L">
+							<div class="piece empty">
+								<div class="letter">M</div>
+								<div class="points">3</div>
+							</div>
+							<div class="playerName">Empty</div>
+						</div>
+					</div>
+					<div class="row justify-content-around">
+						<div class="col-4" id="player2L">
+							<div class="piece empty">
+								<div class="letter">D</div>
+								<div class="points">3</div>
+							</div>
+							<div class="playerName">Empty</div>
+						</div>
+						<div class="col-4" id="player4L">
+							<div class="piece empty">
+								<div class="letter">E</div>
+								<div class="points">3</div>
+							</div>
+							<div class="playerName">Empty</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-4" id="player3L">
+							<div class="piece empty">
+								<div class="letter">O</div>
+								<div class="points">1</div>
+							</div>
+							<div class="playerName">Empty</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6" style="text-align: center;">
+					<span style="font-size: 3rem; text-shadow: 3px 3px 7px black;">Room Code:</span>
+					<div id="roomCode">
+						<div class="piece">
+							<div class="letter">V</div>
+							<div class="points">4</div>
+						</div>
+						<div class="piece">
+							<div class="letter">K</div>
+							<div class="points">5</div>
+						</div>
+						<div class="piece">
+							<div class="letter">X</div>
+							<div class="points">8</div>
+						</div>
+						<div class="piece">
+							<div class="letter">G</div>
+							<div class="points">2</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	    </div>
+
+		<div class="container" id="desktopPlay" style="text-align: center;">
+			<div id="scores"></div>
+			<div id="board"></div>
+		</div>
+
+
+		<script src="content/js/shared.js"></script>
+		<script src="content/js/desktop.js"></script>
+	</body>
+</html>
